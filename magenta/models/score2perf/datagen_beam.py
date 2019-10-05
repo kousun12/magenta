@@ -39,8 +39,9 @@ import typing
 # TODO(iansimon): this should probably be defined in the problem
 SCORE_BPM = 120.0
 
-FLAGS = tf.app.flags.FLAGS
 flags = tf.app.flags
+FLAGS = flags.FLAGS
+
 flags.DEFINE_string(
     'pipeline_options', '',
     'Command line flags to use in constructing the Beam pipeline options.')
